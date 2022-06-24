@@ -1,18 +1,41 @@
 *,
 *::before ,
 *::after {
-     
- 
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+@font-face {
+    font-family: Poplight;
+    src: url('./Fonts/Poppins-Light.ttf');
 }
-
-
-
-
+@font-face {
+    font-family: PopRegular;
+    src: url('./Fonts/Poppins-Regular.ttf');
+}
 
 body{
     font-family: Poplight;
 }
 .portfolio { 
     color: white;
-    background: radial-gradient();
+    background: radial-gradient(rgba(43,55,96,1),rgba(11,16,35,1));
+}
+nav{
+    min-height: 10vh;
+    margin: auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+}
+.logo{
+    font-size: 20px;
+}
+.page {
+    min-height: 90vh;
+    display: grid;
+    grid-template-columns: ;
 }

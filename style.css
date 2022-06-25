@@ -6,9 +6,10 @@
      box-sizing: border-box;
  }
 
+
 @font-face {
     font-family: Poplight;
-    src: url('./Fonts/Poppins-Light.ttf');
+    src: url('./Fonts/X‚fora.ttf');
 }
 @font-face {
     font-family: PopRegular;
@@ -20,7 +21,7 @@ body{
 }
 .portfolio { 
     color: white;
-    background: radial-gradient(rgba(43,55,96,1),rgba(11,16,35,1));
+    background: radial-gradient(#473b33,#070402);
 }
 nav{
     min-height: 10vh;
@@ -33,9 +34,85 @@ nav{
 }
 .logo{
     font-size: 20px;
+    height:70px;
+    width:70px;
 }
 .page {
-    min-height: 90vh;
+    min-height: 80vh;        /*Rest 10 in nav bar*/
     display: grid;
-    grid-template-columns: ;
+    grid-template-columns: 5% 1fr 1fr 1fr 5% ;     /*fr-fraction */
+}
+.hero {
+    overflow: hidden;
+    height: 500px;
+    align-self: center;
+    justify-self: center;
+    display: flex;
+}
+.line-1{
+    position: absolute;
+    top: 70%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-10%);    
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 2s steps(14) 1s 1 normal both,
+             blinkTextCursor 500ms steps(14) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 8em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+.details {
+    grid-column: 2/3;
+    align-self: end;
+}
+.hero img {
+    height: 500px;
+    transition : transform 1s ease-out;
+    cursor: pointer;
+} 
+.model-right {
+    transform: translate(0,10%);
+}
+.model-left {
+    transform: translate(0,-10%);
+}
+
+
+.hero:hover .model-right {
+    transform: translate(0%,0%);
+}
+.hero:hover .model-left {
+    transform: translate(0%,0%);
+}
+.details h1 {
+    font-size: 42px;
+    font-weight: lighter;
+    font-family: Poplight;
+}
+.details h2 {
+    font-size: 28px;
+    padding: 10px 0px;
+    font-weight: lighter;
+}
+.details p {
+    padding: 10px 0px 50px 0px;
+}
+.pages {
+    position: absolute ;
+    right: 5%;
+    
 }

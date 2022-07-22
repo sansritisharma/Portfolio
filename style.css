@@ -79,7 +79,7 @@ nav{
     grid-column: 2/3;
     align-self: end;
 }
-.hero img {
+.shero img {
     height: 500px;
     transition : transform 1s ease-out;
     cursor: pointer;
@@ -92,10 +92,10 @@ nav{
 }
 
 
-.hero:hover .model-right {
+.shero:hover .model-right {
     transform: translate(0%,0%);
 }
-.hero:hover .model-left {
+.shero:hover .model-left {
     transform: translate(0%,0%);
 }
 .details h1 {
